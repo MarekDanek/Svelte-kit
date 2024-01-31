@@ -1,27 +1,37 @@
 <script>
 
-
-
 </script>
+
+<body>
+
+
+
 
 <div class="navbar" id="menu">
   <a data-sveltekit-reload href="/"><b>Domů</b></a>    
   <a data-sveltekit-reload href="/Tab">Tabulka</a>
   <a data-sveltekit-reload href="/Had">Had</a>
+
 </div> 
 
 <div class="index">
 <h2>Mé výtvory</h2>
 
 
+
 </div>
 
-
-
+</body>
 <style>
+
+
+
+.navbar .icon {
+  display: none;
+}
     .index{
         text-align: center;
-        font-size : 2em;
+        font-size : 4em;
         display: block;
         margin: 20px 10px;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -31,10 +41,14 @@
 
     .navbar {
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .navbar a {
-  float: left;
+  
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -56,30 +70,4 @@
  
 }
 
-.navbar .icon {
-  display: none;
-}
-
-@media screen and (max-width: 820px) {
-  .navbar a:not(:first-child) {display: none;}
-  .navbar a.icon {
-    float: left;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 820px) {
-  .navbar.responsive {position: relative;}
-  .navbar.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    
-  }
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
 </style>

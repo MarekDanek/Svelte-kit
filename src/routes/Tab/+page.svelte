@@ -99,9 +99,12 @@ section {
 		flex: 0.6;
 	}
 
+    .navbar .icon {
+  display: none;
+}
     .index{
         text-align: center;
-        font-size : 2em;
+        font-size : 4em;
         display: block;
         margin: 20px 10px;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -111,10 +114,12 @@ section {
 
     .navbar {
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar a {
-  float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -134,32 +139,5 @@ section {
   background-color: #3B3B3B;
   color: white;
  
-}
-
-.navbar .icon {
-  display: none;
-}
-
-@media screen and (max-width: 820px) {
-  .navbar a:not(:first-child) {display: none;}
-  .navbar a.icon {
-    float: left;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 820px) {
-  .navbar.responsive {position: relative;}
-  .navbar.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    
-  }
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
 }
 </style>
