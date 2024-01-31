@@ -30,6 +30,9 @@
   display: none;
 }
     .index{
+      opacity: 90%;
+        color: white;
+        background-color: black;
         text-align: center;
         font-size : 4em;
         display: block;
@@ -40,6 +43,7 @@
 
 
     .navbar {
+    
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -68,6 +72,12 @@
   background-color: #3B3B3B;
   color: white;
  
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    justify-content: flex-start;
+  }
 }
 
 </style>

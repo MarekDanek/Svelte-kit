@@ -102,7 +102,10 @@ section {
     .navbar .icon {
   display: none;
 }
-    .index{
+.index{
+      opacity: 90%;
+        color: white;
+        background-color: black;
         text-align: center;
         font-size : 4em;
         display: block;
