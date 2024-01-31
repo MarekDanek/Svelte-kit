@@ -2,9 +2,6 @@
 
 </script>
 
-
-
-
 <div class="navbar" id="menu">
   <a data-sveltekit-reload href="/"><b>Domů</b></a>    
   <a data-sveltekit-reload href="/Tab">Tabulka</a>
@@ -19,10 +16,7 @@
 
 </div>
 
-<div class="obrazky">
-<img src="./src/lib/images/obrazek.png" />
 
-</div>
 
 
 <style>
@@ -68,6 +62,8 @@
   font-size: 2.5em;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: #525252;
+  width: 40%;
+  border: solid black 3px;
 }
 
 .navbar a:hover {
@@ -84,6 +80,9 @@
 @media screen and (max-width: 600px) {
   .navbar {
     justify-content: flex-start;
+    flex-direction: column;
+
+
   }
 }
 

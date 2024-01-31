@@ -55,6 +55,8 @@ import Canvas from '../../lib/components/Canvas.svelte';
   font-size: 2.5em;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: #525252;
+  width: 40%;
+  border: solid black 3px;
 }
 
 .navbar a:hover {
@@ -66,5 +68,14 @@ import Canvas from '../../lib/components/Canvas.svelte';
   background-color: #3B3B3B;
   color: white;
  
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    justify-content: flex-start;
+    flex-direction: column;
+
+
+  }
 }
 </style>
