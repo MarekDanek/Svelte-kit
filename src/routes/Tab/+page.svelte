@@ -64,7 +64,7 @@ import Table from '../../lib/components/Table.svelte';
 </div> 
 
 <div class="index">
-<h2>Mé výtvory Tab</h2>
+    <h2>Mé výtvory Svelte</h2>
 
 
 </div>

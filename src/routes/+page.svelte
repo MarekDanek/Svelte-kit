@@ -15,7 +15,7 @@
 </div> 
 
 <div class="index">
-<h2>Mé výtvory</h2>
+<h2>Mé výtvory Svelte</h2>
 
 
 

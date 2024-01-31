@@ -11,7 +11,7 @@ import Canvas from '../../lib/components/Canvas.svelte';
 </div> 
 
 <div class="index">
-<h2>Mé výtvory Had</h2>
+    <h2>Mé výtvory Svelte</h2>
 
 
 </div>
