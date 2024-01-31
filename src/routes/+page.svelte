@@ -2,8 +2,6 @@
 
 </script>
 
-<body>
-
 
 
 
@@ -21,10 +19,19 @@
 
 </div>
 
-</body>
+<div class="obrazky">
+<img src="./src/lib/images/obrazek.png" />
+
+</div>
+
+
 <style>
+.obrazky{
 
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .navbar .icon {
   display: none;
