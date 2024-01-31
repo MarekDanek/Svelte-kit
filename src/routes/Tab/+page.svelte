@@ -1,5 +1,5 @@
 <script>
-import Table from './Table.svelte';
+import Table from '../../lib/components/Table.svelte';
 	
 
 	const headers = [
