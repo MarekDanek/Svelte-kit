@@ -7,9 +7,10 @@
   
     const renderFunctions = {
       name: (value) => `${value}`,
-      level: (value) => `<strong>${value}</strong>`,
-      type: (value) => `<strong>${value}</strong>`,
-      ability: (value) => `<strong>${value}</strong>`,
+      url : (value) => `${value}`,
+      // level: (value) => `<strong>${value}</strong>`,
+      // type: (value) => `<strong>${value}</strong>`,
+      // ability: (value) => `<strong>${value}</strong>`,
     };
   
     let minLevel;
@@ -33,8 +34,11 @@
       border-collapse: collapse;
       width: 100%;
     }
+    tr{
+      border: solid black 1px;
+    }
   
-    th, td {
+    th {
       border: solid black 1px;
       padding: 8px;
       text-align: left;
