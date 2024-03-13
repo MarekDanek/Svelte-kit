@@ -1,74 +1,26 @@
 <script>
 	import Table from "../../lib/components/Table.svelte";
-
-	async function FetchAPI() {
-		const response = await fetch(
-			`https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0`,
-		);
-		const data = await response.json();
-		const rows = data.results.map(({ name, url }) => ({ name, url }));
-		return rows;
-	}
-
-	let rows = [];
+	import { page } from '$app/stores';
+    export let data;
+	
+	// async function FetchAPI() {
+	// 	const response = await fetch(
+	// 		`https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0`,
+	// 	);
+	// 	const data = await response.json();
+	// 	const rows = data.results.map(({ name, url }) => ({ name, url }));
+	// 	return rows;
+	// }
+	
+	let rows = $page.data.results;
 	const headers = [
 		{ key: "name", value: "Jméno" },
-		{ key: "url", value: "URL" },
+		{ key: "url", value: "URL" }
 	];
 
-	FetchAPI().then((data) => (rows = data));
+	// FetchAPI().then((data) => (rows = data));
 
-	//  const headers = [
-	//    { key: "name", value: "Pokemon Name" },
-	//    { key: "type", value: "Type" },
-	//    { key: "level", value: "Level" },
-	//    { key: "ability", value: "Ability" },
-	//   ];
-
-	// const rows = [
-	//   {
-	// 	id: "pikachu",
-	// 	name: "Pikachu",
-	// 	type: "Electric",
-	// 	level: 25,
-	// 	ability: "Static",
-	//   },
-	//   {
-	// 	id: "charizard",
-	// 	name: "Charizard",
-	// 	type: "Fire/Flying",
-	// 	level: 50,
-	// 	ability: "Blaze",
-	//   },
-	//   {
-	// 	id: "bulbasaur",
-	// 	name: "Bulbasaur",
-	// 	type: "Grass/Poison",
-	// 	level: 15,
-	// 	ability: "Overgrow",
-	//   },
-	//   {
-	// 	id: "squirtle",
-	// 	name: "Squirtle",
-	// 	type: "Water",
-	// 	level: 20,
-	// 	ability: "Torrent",
-	//   },
-	//   {
-	// 	id: "jigglypuff",
-	// 	name: "Jigglypuff",
-	// 	type: "Normal/Fairy",
-	// 	level: 18,
-	// 	ability: "Cute Charm",
-	//   },
-	//   {
-	// 	id: "eevee",
-	// 	name: "Eevee",
-	// 	type: "Normal",
-	// 	level: 30,
-	// 	ability: "Adaptability",
-	//   },
-	// ];
+$: console.log($page)
 </script>
 
 <div class="navbar" id="menu">
@@ -78,9 +30,8 @@
 </div>
 
 <div class="index">
-	<h2>Mé výtvory Svelte</h2>
+	<h2>SvelteKit</h2>
 </div>
-
 <section>
 	<Table {rows} {headers}>
 		<!-- 1 - tady říkám, že chci změnit obsah v místě (slotu) cell (buňka) -->

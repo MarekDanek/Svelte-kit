@@ -9,7 +9,7 @@
 </div>
 
 <div class="index">
-  <h2>Mé výtvory Svelte</h2>
+  <h2>SvelteKit</h2>
 </div>
 <div class="cs">
   <Canvas />

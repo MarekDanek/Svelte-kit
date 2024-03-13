@@ -4,14 +4,7 @@
   
     export let headers;
     export let rows;
-  
-    const renderFunctions = {
-      name: (value) => `${value}`,
-      url : (value) => `${value}`,
-      // level: (value) => `<strong>${value}</strong>`,
-      // type: (value) => `<strong>${value}</strong>`,
-      // ability: (value) => `<strong>${value}</strong>`,
-    };
+
   
     let minLevel;
     let maxLevel;
